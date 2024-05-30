@@ -12,7 +12,7 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # AI 모델 로드
-model = torch.load('model.pth')
+model = torch.load('model_final.pth')
 model.eval()
 
 # 정규화 상수 수정
